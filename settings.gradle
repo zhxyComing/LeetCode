@@ -1,0 +1,4 @@
+include ':descprocessor'
+include ':descapi'
+include ':app'
+rootProject.name = "LeetCode"

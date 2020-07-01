@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.dixon.leetcode"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // desc annotationProcessor 配置 moduleName 用于找到对应 assets
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()] // app
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // 用于生成题目描述文件
+    implementation project(":descapi")
+    annotationProcessor project(":descprocessor")
+
+    // codeView 暂时只用来承载代码
+    implementation 'com.github.kbiakov:CodeView-Android:1.3.2'
+}

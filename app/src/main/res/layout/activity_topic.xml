@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fun.detail.TopicActivity">
+
+    <com.dixon.leetcode.core.view.NoHorScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="题目序号："
+                    android:textColor="#444444"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_topic_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#444444"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="题目描述："
+                    android:textColor="#444444"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_topic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="描述" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="题目示例："
+                    android:textColor="#444444"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_topic_example"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="例子" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="解法"
+                android:textColor="#444444"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.dixon.leetcode.core.view.NoScrollListView
+                android:id="@+id/lv_topic_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@null"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+    </com.dixon.leetcode.core.view.NoHorScrollView>
+
+</FrameLayout>
