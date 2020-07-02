@@ -27,7 +27,8 @@ public class TopicTwo {
                     "   ListNode(int x) {\n" +
                     "       val = x;\n" +
                     "   }\n" +
-                    "}\n",
+                    "}\n" +
+                    "m、n 表示链表长度。\n",
             timeComplexity = "max(m,n)",
             spaceComplexity = "max(m,x)")
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
