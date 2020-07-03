@@ -85,7 +85,7 @@ spaceComplexity 表示空间复杂度；
 
 最终，上述 Demo 在 App 里会如下展示：
 
-![效果图](img/效果图.png)
+![效果图](img/效果图.jpg)
 
 所有数据存放在 assets/topics.txt 里，也可以根据需要自行解析。
 
