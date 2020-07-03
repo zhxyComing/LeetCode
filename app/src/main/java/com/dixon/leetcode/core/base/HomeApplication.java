@@ -2,6 +2,7 @@ package com.dixon.leetcode.core.base;
 
 import android.app.Application;
 
+import com.dixon.leetcode.core.util.FontUtil;
 import com.dixon.simple.router.core.SRouter;
 
 /**
@@ -15,5 +16,7 @@ public class HomeApplication extends Application {
     public void onCreate() {
         super.onCreate();
         SRouter.init(this);
+        FontUtil.init(this);
+        FontUtil.setDefaultFont("Yun-Book.ttf");
     }
 }

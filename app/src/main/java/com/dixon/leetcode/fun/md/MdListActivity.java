@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.dixon.leetcode.R;
+import com.dixon.leetcode.core.base.BaseActivity;
 import com.dixon.leetcode.core.base.RouterConstant;
 import com.dixon.leetcode.core.bean.MdData;
 import com.dixon.simple.router.api.SimpleRouter;
@@ -23,7 +24,7 @@ import java.util.List;
  * Functional desc: MD文件列表页 会加载assets/md/下的md文件列表
  */
 @SimpleRouter(value = RouterConstant.MD_LIST_PAGE, interceptor = "")
-public class MdListActivity extends AppCompatActivity {
+public class MdListActivity extends BaseActivity {
 
     private ListView mdsView;
     private List<MdData> data = new ArrayList<>();

@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.dixon.descapi.bean.DescData;
 import com.dixon.leetcode.R;
+import com.dixon.leetcode.core.util.FontUtil;
 
 import java.util.List;
 
@@ -76,6 +77,7 @@ public class TopicMethodAdapter extends BaseAdapter {
             timeOView = convertView.findViewById(R.id.tv_method_time_o);
             spaceOView = convertView.findViewById(R.id.tv_method_space_o);
             codeView = convertView.findViewById(R.id.tv_method_code);
+            FontUtil.font(convertView);
         }
     }
 }

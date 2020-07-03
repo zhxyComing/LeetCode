@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.dixon.leetcode.R;
 import com.dixon.leetcode.core.bean.MdData;
+import com.dixon.leetcode.core.util.FontUtil;
 
 import java.util.List;
 
@@ -63,6 +64,7 @@ public class MdListAdapter extends BaseAdapter {
 
         public ViewHolder(View convertView) {
             titleView = convertView.findViewById(R.id.tv_md_title);
+            FontUtil.font(convertView);
         }
     }
 }

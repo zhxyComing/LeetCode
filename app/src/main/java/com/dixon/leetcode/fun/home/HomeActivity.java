@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.dixon.leetcode.R;
+import com.dixon.leetcode.core.base.BaseActivity;
 import com.dixon.leetcode.core.base.RouterConstant;
 import com.dixon.simple.router.api.SimpleRouter;
 import com.dixon.simple.router.core.SRouter;
@@ -16,7 +17,7 @@ import com.dixon.simple.router.core.SRouter;
  * Functional desc: 功能列表页
  */
 @SimpleRouter(value = RouterConstant.HOME_PAGE, interceptor = "")
-public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
+public class HomeActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

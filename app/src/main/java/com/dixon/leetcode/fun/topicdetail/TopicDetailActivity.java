@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.dixon.descapi.bean.DescData;
 import com.dixon.leetcode.R;
+import com.dixon.leetcode.core.base.BaseActivity;
 import com.dixon.leetcode.core.base.RouterConstant;
 import com.dixon.simple.router.api.SimpleParam;
 import com.dixon.simple.router.api.SimpleRouter;
@@ -20,7 +21,7 @@ import com.dixon.simple.router.core.SRouter;
  * Functional desc: 题目详情页
  */
 @SimpleRouter(value = RouterConstant.TOPIC_DETAIL_PAGE, interceptor = "")
-public class TopicDetailActivity extends AppCompatActivity {
+public class TopicDetailActivity extends BaseActivity {
 
     @SimpleParam("descData")
     DescData descData;

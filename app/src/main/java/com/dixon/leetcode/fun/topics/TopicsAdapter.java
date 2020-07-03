@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.dixon.descapi.bean.DescData;
 import com.dixon.leetcode.R;
+import com.dixon.leetcode.core.util.FontUtil;
 
 import java.util.List;
 
@@ -67,6 +68,7 @@ public class TopicsAdapter extends BaseAdapter {
         public ViewHolder(View convertView) {
             indexView = convertView.findViewById(R.id.tv_topic_index);
             titleView = convertView.findViewById(R.id.tv_topic_title);
+            FontUtil.font(convertView);
         }
     }
 }

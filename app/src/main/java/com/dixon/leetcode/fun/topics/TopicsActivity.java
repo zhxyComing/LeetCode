@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.dixon.descapi.bean.DescData;
 import com.dixon.leetcode.R;
+import com.dixon.leetcode.core.base.BaseActivity;
 import com.dixon.leetcode.core.base.RouterConstant;
 import com.dixon.leetcode.core.util.AssetsUtil;
 import com.dixon.simple.router.api.SimpleRouter;
@@ -28,7 +29,7 @@ import java.util.List;
  * Functional desc: LeetCode题目列表页
  */
 @SimpleRouter(value = RouterConstant.TOPICS_PAGE, interceptor = "")
-public class TopicsActivity extends AppCompatActivity {
+public class TopicsActivity extends BaseActivity {
 
     private ListView topicsView;
     private List<DescData> descDataList;
