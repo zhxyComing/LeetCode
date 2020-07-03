@@ -93,3 +93,7 @@ spaceComplexity 表示空间复杂度；
 markdown 文件需要放在 assets/md 文件夹下；
 如果 md 文件需要加载图片，需要将图片放至 assets/images 文件夹下，并如下使用路径：
 `![xxx](file:///android_asset/images/xxx)`
+
+## 总结
+
+这是一个练习 LeetCode 的项目，同时一个用来复习 LeetCode 的 App。
