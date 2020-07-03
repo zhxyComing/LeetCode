@@ -1,4 +1,4 @@
-package com.dixon.leetcode.fun.detail;
+package com.dixon.leetcode.fun.topicdetail;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,14 +18,14 @@ import io.github.kbiakov.codeview.CodeView;
 /**
  * Create by: dixon.xu
  * Create on: 2020.07.01
- * Functional desc: 方法适配器
+ * Functional desc: 题目方法适配器
  */
-public class MethodAdapter extends BaseAdapter {
+public class TopicMethodAdapter extends BaseAdapter {
 
     private List<DescData.Method> descList;
     private Context context;
 
-    public MethodAdapter(List<DescData.Method> descList, Context context) {
+    public TopicMethodAdapter(List<DescData.Method> descList, Context context) {
         this.descList = descList;
         this.context = context;
     }
