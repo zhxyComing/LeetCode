@@ -6,7 +6,7 @@ import com.dixon.descapi.Topic;
 /**
  * Create by: dixon.xu
  * Create on: 2020.07.06
- * Functional desc:
+ * Functional desc: LeetCode 题库 第七题
  */
 @Topic(index = 7, topic = TopicSeven.TOPIC, example = TopicSeven.EXAMPLE)
 public class TopicSeven {

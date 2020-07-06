@@ -56,7 +56,7 @@ public class TopicTwo {
         return pre.next;
     }
 
-    public static class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
 

@@ -1,7 +1,5 @@
 package com.dixon.leetcode.leetcode;
 
-import android.util.Log;
-
 import com.dixon.descapi.Method;
 import com.dixon.descapi.Topic;
 
