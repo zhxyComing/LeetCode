@@ -146,6 +146,8 @@ public class DescProcessor extends DescAbstractProcessor {
                     }
                     result.append(s).append(System.lineSeparator());
                     // 截取的是完整方法
+                    // 实际有优化空间 现在是每加一行 就从头执行一次现有字符串是否满足成对括号判断
+                    // 优化方式是 每加一行累计括号 直到括号成对 相当于是 O(n)
                     if (isMatch(result.toString())) {
                         result.deleteCharAt(result.length() - 1);
                         return result.toString();

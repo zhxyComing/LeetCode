@@ -1,7 +1,5 @@
 package com.dixon.leetcode.fun.home;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 
